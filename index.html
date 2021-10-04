@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Trabajá con nosotros - Livia Books</title>
+    <link rel="icon" href="./media/img/icon.png"/>
+    <meta name="author" content="Dino Damianoff"/>
+    <meta name="description" content="Trabajá con nosotros."/>
+    <meta name="asignatura"
+          content="
+              Trabajo práctico 3 (4 CSS)
+              Programación II - Profesor Ricardo Teseira
+              Alumno: Damianoff Dino - 43706797
+              "/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+            rel="stylesheet"
+            href="./styles/styles.css"
+            type="text/css"/>
+</head>
+
+
+<body>
+    <div class="general-container">
+        <header>
+            <h1>LIVIA BOOKS</h1>
+        </header>
+
+        <nav>
+            <img src="/media/img/lily.png" alt="ícono de lirio decorativo"/>
+            <ul>
+                <li onclick="document.href='#'"><a href="#">inicio</a></li>
+                <li><a href="#">sobre nosotros</a></li>
+                <li><a href="#">trabajo</a></li>
+                <li><a href="#">contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+
+                <h2>TRABAJÁ CON NOSOTROS</h2>
+                <p> Si te interesa formar parte de nuestro equipo,
+                    completá los siguientes datos. <br/>
+                    Estaremos encantados de revisar tu solicitud.
+                </p>
+
+                <form>
+                    <fieldset class="personal-data-fieldset-container">
+                        <legend>Datos personales:</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span class="label-text-first">Nombres:</span>
+                                    <input type="text"
+                                           placeholder="José Antonio"
+                                           name="firstname"
+                                           id="firstname"
+                                           class="text-based-input"
+                                           />
+                                </label>
+                            </li>
+
+                            <li>
+                                <label>
+                                    <span class="label-text">Apellidos:</span>
+                                    <input type="text"
+                                           name="lastname"
+                                           placeholder="Pérez Rodriguez"
+                                           id="lastname"
+                                           class="text-based-input"
+                                           />
+                                </label>
+                            </li>
+
+                            <li>
+                                <label> <span class="label-text">Fecha de nacimiento:</span>
+                                    <input type="date" id="birthday"/>
+                                </label>
+                            </li>
+
+                            <li>
+                                <p class="label-text">Género:</p>
+                                <div class="block-input-label">
+                                    <input type="radio" name="genre" id="Masculine"/>
+                                    <label for="Masculine"><span class="label-text-option">Masculino</span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="radio" name="genre" id="Feminine"/>
+                                    <label for="Feminine"><span class="label-text-option">Femenino</span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="radio" name="genre" id="Other"/>
+                                    <label for="Other"><span class="label-text-option">Otro</span></label>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="contact-fieldset-container">
+                        <legend>Contacto:</legend>
+                        <ul>
+                            <li>
+                                <label> <span class="label-text-first">Teléfono:</span>
+                                    <input type="tel"
+                                           id="phone"
+                                           class="text-based-input"
+                                           placeholder="+54 0 123 45 6789 101"
+                                            />
+                                </label>
+                            </li>
+
+                            <li>
+                                <label> <span class="label-text">Correo electrónico:</span>
+                                    <input type="email"
+                                           id="email"
+                                           class="text-based-input"
+                                           placeholder="micorreo@direccion.edu"
+                                           />
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="experience-fieldset-container">
+                        <legend>Sobre tu experiencia:</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <span class="label-text-first">Portfolio:</span>
+                                    <input type="url" id="portfolio" placeholder="https://github.com/usuario/proyecto" class="text-based-input"/>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label> <span class="label-text">Horario preferido para trabajar:</span>
+                                    <input type="time" id="fav-time"/>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label> <span class="label-text">¿Cómo te enteraste de nosotros?</span>
+                                    <select name="how-meet-us" id="meet-us">
+                                        <option value="default" selected disabled>seleccione una...
+                                        </option>
+                                        <option value="social-media">
+                                            Redes sociales
+                                        </option>
+                                        <option value="research">
+                                            Interés en nuestros servicios
+                                        </option>
+                                        <option value="contacts">
+                                            Contactos (familia, amigos u otros)
+                                        </option>
+                                        <option value="marketing">
+                                            Publicidad en sitios web
+                                        </option>
+                                        <option value="product">
+                                            Uso de un producto
+                                        </option>
+                                    </select>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="file-adjunct"> <span class="label-text">Adjunte su mejor trabajo:</span>
+                                    <input type="file" id="file-adjunct"/>
+                                </label>
+                            </li>
+
+                            <li>
+                                <p class="label-text">Seleccione los que domina:</p>
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-html" id="kn-html">
+                                    <label for="kn-html"><span class="label-text-option">HTML </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-xhtml" id="kn-xhtml">
+                                    <label for="kn-xhtml"><span class="label-text-option">xHTML </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-css" id="kn-css">
+                                    <label for="kn-css"><span class="label-text-option">CSS </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-sass" id="kn-sass">
+                                    <label for="kn-sass"><span class="label-text-option">Sass </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-english" id="kn-eng">
+                                    <label for="kn-eng"><span class="label-text-option">Inglés </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="knowledge-latin" id="kn-lat">
+                                    <label for="kn-lat"><span class="label-text-option">Latín </span></label>
+                                </div>
+
+                                <div class="block-input-label">
+                                    <input type="checkbox" name="ePUB" id="kn-epub">
+                                    <label for="kn-epub"><span class="label-text-option">Experiencia con ePUB</span></label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="ta-why-you">
+                                    <span class="label-text">
+                                        Si deseas comentar algo sobre ti, puedes hacerlo a continuación:
+                                    </span>
+                                </label>
+                                <textarea name="ta-why-you"
+                                          id="ta-why-you"
+                                          rows="4" cols="20"
+                                          maxlength="500"
+                                          placeholder="¡Cuéntanos lo genial que eres!"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <div class="end-buttons">
+                        <input type="image"
+                               name="btn-image"
+                               id="btn-submit"
+                               src="/media/img/submit.png"
+                               alt="enviar formulario"/>
+                        <!--
+                        Queda más feo que un pié por detrás
+                        y es terriblemente inconveniente
+                        respecto al input[type="submit"]
+                        pero un input más es un input más
+
+                        -->
+
+                        <input type="reset" name="btn-reset" id="btn-reset"/>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <address>
+                Livia Books Inc. <br />
+                Todos los derechos reservados. <br />
+                <a href="https://www.duckduckgo.com" target="_blank">Sitio para legales</a> <br/>
+                Contacto para fines publicitarios:
+                <a><abbr title="Departamento">Dpt.</abbr> Marketing</a> - Livia Books.
+                <br/>
+
+                Pedraza 1256 - Tucumán, Argentina <br />
+                12-3456789-0
+            </address>
+
+            <div>
+                Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>

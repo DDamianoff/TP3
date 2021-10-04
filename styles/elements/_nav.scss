@@ -1,0 +1,30 @@
+@import "../utilities/_var.scss";
+
+nav {
+  background-color: $livia-dark;
+  display: flex;
+  align-items: flex-end;
+  img {
+    background-color: $lavender;
+    border-radius: 30px;
+    margin: auto auto auto $generic-padding;
+  }
+
+  ul {
+    display: flex;
+    align-items: stretch;
+
+    li {
+      display: inline;
+      padding: $generic-padding $generic-padding*1.5;
+
+      a {
+        color: $lavender;
+      }
+      &:hover {
+        background-color: $livia-blossom;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,216 @@
+/*
+$livia-light:   #e8ceff;
+$lavender:        #d6b7e7;
+$love-blossom:    #d2a3ff;
+$livia-blossom: #762bb7;
+$livia-gray: #7c6a86;
+$livia-orchid:    #9762c4;
+$livia-dark:      #422b54;
+ */
+/*
+$livia-light:   #e8ceff;
+$lavender:        #d6b7e7;
+$love-blossom:    #d2a3ff;
+$livia-blossom: #762bb7;
+$livia-gray: #7c6a86;
+$livia-orchid:    #9762c4;
+$livia-dark:      #422b54;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400;500;700&family=Saira+Stencil+One&display=swap");
+footer {
+  background-color: #4b4d59;
+  padding: 20px;
+  display: flex;
+  font-weight: 200;
+  text-decoration: none;
+}
+footer address {
+  margin-right: auto;
+  color: #ffecbe;
+}
+footer address a {
+  color: #a9fcff;
+}
+footer div {
+  margin-top: auto;
+  color: #f5cc5a;
+}
+footer div a {
+  color: #fefefe;
+  font-weight: bold;
+  text-decoration: #fefefe dotted;
+}
+
+/*
+$livia-light:   #e8ceff;
+$lavender:        #d6b7e7;
+$love-blossom:    #d2a3ff;
+$livia-blossom: #762bb7;
+$livia-gray: #7c6a86;
+$livia-orchid:    #9762c4;
+$livia-dark:      #422b54;
+ */
+header {
+  background-color: #f5cc5a;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  text-decoration: none;
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  color: #2e2528;
+}
+
+/*
+$livia-light:   #e8ceff;
+$lavender:        #d6b7e7;
+$love-blossom:    #d2a3ff;
+$livia-blossom: #762bb7;
+$livia-gray: #7c6a86;
+$livia-orchid:    #9762c4;
+$livia-dark:      #422b54;
+ */
+nav {
+  background-color: #2e2528;
+  display: flex;
+  align-items: flex-end;
+}
+nav img {
+  background-color: #f5cc5a;
+  border-radius: 30px;
+  margin: auto auto auto 20px;
+}
+nav ul {
+  display: flex;
+  align-items: stretch;
+}
+nav ul li {
+  display: inline;
+  padding: 20px 30px;
+}
+nav ul li a {
+  color: #f5cc5a;
+}
+nav ul li:hover {
+  background-color: #666d79;
+  cursor: pointer;
+}
+
+/*
+$livia-light:   #e8ceff;
+$lavender:        #d6b7e7;
+$love-blossom:    #d2a3ff;
+$livia-blossom: #762bb7;
+$livia-gray: #7c6a86;
+$livia-orchid:    #9762c4;
+$livia-dark:      #422b54;
+ */
+main {
+  padding: 20px;
+}
+main section h2 {
+  font-family: "Saira Stencil One", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+}
+main section p {
+  font-weight: 200;
+}
+main section fieldset {
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #2e2528;
+  color: #2e2528;
+  font-weight: 200;
+}
+main section fieldset legend {
+  padding: 10px;
+  background-color: #2e2528;
+  color: #f5cc5a;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.label-text-first, .label-text {
+  display: block;
+  font-weight: bold;
+}
+
+.label-text {
+  margin-top: 10px;
+}
+
+.block-input-label {
+  display: block;
+  margin-left: 10px;
+}
+
+.generic-input-properties, .experience-fieldset-container input#file-adjunct::-webkit-file-upload-button, .text-based-input, .end-buttons input#btn-reset, .experience-fieldset-container textarea, .experience-fieldset-container select#meet-us, .experience-fieldset-container input#fav-time, .personal-data-fieldset-container input#birthday {
+  margin-top: 4px;
+  border: 2px solid #2e2528;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.text-based-input, .end-buttons input#btn-reset, .experience-fieldset-container textarea, .experience-fieldset-container select#meet-us, .experience-fieldset-container input#fav-time, .personal-data-fieldset-container input#birthday {
+  color: #4b4d59;
+}
+
+.experience-fieldset-container select#meet-us {
+  background-color: white;
+}
+.experience-fieldset-container input#file-adjunct::-webkit-file-upload-button {
+  color: #666d79;
+  background-color: white;
+  cursor: pointer;
+}
+.end-buttons {
+  display: flex;
+}
+.end-buttons input[type=image] {
+  padding-top: 4px;
+  width: 60px;
+  margin-right: 10px;
+}
+.end-buttons input#btn-reset {
+  color: #666d79;
+  background-color: white;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #666d79;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.general-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  min-width: 180px;
+  margin: auto;
+  background-color: #fefefe;
+}
+
+/*# sourceMappingURL=styles.css.map */

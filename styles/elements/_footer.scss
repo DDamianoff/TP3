@@ -1,0 +1,29 @@
+@import "../utilities/_var.scss";
+
+
+footer {
+  background-color: $livia-gray;
+  padding: $generic-padding;
+  display: flex;
+  font-weight: 200;
+  text-decoration: none;
+
+  address{
+    margin-right: auto;
+    color: $love-blossom;
+    a {
+      color: #a9fcff;
+    }
+  }
+
+  div {
+    margin-top: auto;
+    color: $lavender;
+    a {
+      color: $livia-light;
+      font-weight: bold;
+      text-decoration: $livia-light dotted;
+
+    }
+  }
+}

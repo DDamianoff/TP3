@@ -1,0 +1,110 @@
+@import "../utilities/_var.scss";
+
+main {
+  padding: $generic-padding;
+  section {
+    h2 {
+      font-family: "Saira Stencil One", sans-serif;
+      text-decoration: none;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 200;
+    }
+    fieldset {
+      margin-top: $generic-padding;
+      padding: $generic-padding/2;
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: 2px solid $livia-dark;
+      color:$livia-dark;
+      font-weight: 200;
+
+      legend {
+        padding: 10px;
+        background-color: $livia-dark;
+        color: $lavender;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+
+.label-text-first {
+  display: block;
+  font-weight: bold;
+}
+
+.label-text {
+  @extend .label-text-first;
+  margin-top: $generic-padding/2;
+}
+
+.block-input-label {
+  display: block;
+  margin-left: $generic-padding / 2;
+}
+
+.generic-input-properties{
+  margin-top: $generic-padding*0.2;
+  border: 2px solid $livia-dark;
+  padding: $generic-padding*0.5;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.text-based-input {
+  @extend .generic-input-properties;
+  color: $livia-gray;
+}
+
+.personal-data-fieldset-container {
+  input#birthday {
+    @extend .text-based-input;
+  }
+}
+.experience-fieldset-container {
+  input#fav-time {
+    @extend .text-based-input;
+  }
+
+  select#meet-us {
+    @extend .text-based-input;
+    background-color: white;
+  }
+
+  input#file-adjunct::-webkit-file-upload-button {
+    @extend .generic-input-properties;
+    color: $livia-blossom;
+    background-color: white;
+    cursor: pointer;
+
+  }
+
+  textarea {
+    @extend .text-based-input
+  }
+}
+
+.end-buttons {
+  display: flex;
+
+  input[type="image"] {
+    padding-top: 4px;
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  input#btn-reset {
+    @extend .text-based-input;
+    color: $livia-blossom;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+
